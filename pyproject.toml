@@ -1,0 +1,47 @@
+[project]
+name = "arucotrack"
+version = "0.1.0"
+description = "Metric 3-D head trajectories from overhead video of people wearing a flat ArUco marker on the head"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "David Kramný", email = "david.kramny@fit.cvut.cz" }, { name = "Pavel Hrabák" }, { name = "Hana Najmanová" }]
+keywords = ["pedestrian dynamics", "trajectories", "ArUco", "fiducial markers", "camera pose", "PeTrack", "PedPy"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2",
+    "opencv-python-headless==5.0.0.93",
+    "scipy>=1.15",
+    "loguru>=0.7",
+    "tqdm>=4.67",
+    # the run configuration (arucotrack run config.yaml): YAML, structured-config schema, dotted overrides
+    "omegaconf>=2.3",
+]
+
+[project.scripts]
+# `arucotrack run <config.yaml> [key=value ...]` is the one command.
+arucotrack = "arucotrack.cli:main"
+
+[project.urls]
+Homepage = "https://deekayson.github.io/arucotrack-project/"
+Repository = "https://github.com/deekayson/arucotrack"
+Dataset = "https://doi.org/10.5281/zenodo.23341729"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arucotrack"]

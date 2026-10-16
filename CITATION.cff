@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below and this software."
+title: "ArUcoTrack"
+abstract: "Metric 3-D head trajectories from overhead video of people wearing a flat ArUco marker on the head."
+type: software
+version: "0.1.0"
+date-released: "2026-10-16"
+license: MIT
+repository-code: "https://github.com/deekayson/arucotrack"
+url: "https://deekayson.github.io/arucotrack-project/"
+keywords:
+  - pedestrian dynamics
+  - trajectories
+  - ArUco
+  - camera pose
+authors:
+  - family-names: "Kramný"
+    given-names: "David"
+    affiliation: "Faculty of Information Technology, Czech Technical University in Prague"
+    orcid: "https://orcid.org/0009-0000-6046-8025"
+  - family-names: "Hrabák"
+    given-names: "Pavel"
+    affiliation: "Faculty of Information Technology, Czech Technical University in Prague"
+    orcid: "https://orcid.org/0000-0002-8174-1948"
+  - family-names: "Najmanová"
+    given-names: "Hana"
+    affiliation: "Faculty of Civil Engineering, Czech Technical University in Prague"
+    orcid: "https://orcid.org/0000-0003-3440-6618"
+preferred-citation:
+  type: article
+  title: "ArUcoTrack: Pedestrian Trajectory Estimation Beyond the Fixed Vertical Head-to-Camera Distance Assumption"
+  authors:
+    - family-names: "Kramný"
+      given-names: "David"
+      orcid: "https://orcid.org/0009-0000-6046-8025"
+    - family-names: "Hrabák"
+      given-names: "Pavel"
+      orcid: "https://orcid.org/0000-0002-8174-1948"
+    - family-names: "Najmanová"
+      given-names: "Hana"
+      orcid: "https://orcid.org/0000-0003-3440-6618"
+  journal: "Collective Dynamics"
+  year: 2026
+  status: submitted

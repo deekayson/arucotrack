@@ -1,0 +1,18 @@
+# The smallest configuration that runs: `arucotrack run config.example.yaml`. Every other setting has a default
+# (docs/CONFIG.md). Relative paths are taken from this file's directory, or from `--data-root` when it is given.
+# Read a configuration you received before you run it: `output.dir` and `output.work` can name any folder.
+video: clip.mp4                  # the overhead video (one path, or a list of paths)
+camera:
+  calibration: calibration.json  # intrinsics, optionally the camera pose (docs/CALIBRATION_FILE.md)
+marker:
+  side_m: 0.18                   # the measured side of your printed black square, metres
+  # dictionary: DICT_ARUCO_MIP_36h12   # the default. Only 6x6 dictionaries work. A run with no detection usually
+  #                                    # means a wrong dictionary or markers too small in the image.
+  # border_cells: 0.869          # the border constant b. Set it for your camera and print (docs/CALIBRATION.md,
+  #                              # "Border constant").
+  # ids: [1, 2, 3]               # the marker ids in use. Other codes then cannot be decoded.
+# floor:
+#   model: auto                  # the default: the plane z = 0 with a camera pose, no floor without one.
+#                                # plane: the plane z = 0. none: no floor columns.
+#                                # surfaces: the walking surfaces of `floor.surfaces` (docs/FORMATS.md).
+#   surfaces: surfaces.json      # only with model: surfaces

@@ -1,0 +1,19 @@
+# build and run products
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+out/
+work/
+# never commit video, images or caches: they can show identifiable people
+*.mp4
+*.mkv
+*.mov
+*.png
+*.jpg
+*.jpeg
+# except the README figure (a rendering of the stairwell model, no people)
+!docs/assets/stairwell.jpg
+*.npz
+*.npy

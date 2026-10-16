@@ -1,0 +1,8 @@
+# The build context is an allow-list: only what the image copies.
+*
+!pyproject.toml
+!uv.lock
+!README.md
+!src
+**/__pycache__
+**/*.pyc
